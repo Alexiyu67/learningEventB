@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="3">
+    <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0"/>
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/Refinement &amp; Variants/Countdown.bpo|org.eventb.core.poFile#Countdown|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="1">
+        <org.eventb.core.poIdentifier name="n" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="INITIALISATION/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="3">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Refinement &amp; Variants/Countdown.bpo|org.eventb.core.poFile#Countdown|org.eventb.core.poPredicateSet#EVTALLHYPp"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="10∈ℕ" org.eventb.core.source="/Refinement &amp; Variants/Countdown.bum|org.eventb.core.machineFile#Countdown|org.eventb.core.invariant#)"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Refinement &amp; Variants/Countdown.bum|org.eventb.core.machineFile#Countdown|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Refinement &amp; Variants/Countdown.bum|org.eventb.core.machineFile#Countdown|org.eventb.core.invariant#)"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Refinement &amp; Variants/Countdown.bpo|org.eventb.core.poFile#Countdown|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Refinement &amp; Variants/Countdown.bpo|org.eventb.core.poFile#Countdown|org.eventb.core.poSequent#INITIALISATION\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Refinement &amp; Variants/Countdown.bpo|org.eventb.core.poFile#Countdown|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTp" org.eventb.core.parentSet="/Refinement &amp; Variants/Countdown.bpo|org.eventb.core.poFile#Countdown|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="3">
+        <org.eventb.core.poIdentifier name="n'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPp" org.eventb.core.parentSet="/Refinement &amp; Variants/Countdown.bpo|org.eventb.core.poFile#Countdown|org.eventb.core.poPredicateSet#EVTIDENTp" org.eventb.core.poStamp="3"/>
+    <org.eventb.core.poSequent name="decrement/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="3">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Refinement &amp; Variants/Countdown.bpo|org.eventb.core.poFile#Countdown|org.eventb.core.poPredicateSet#EVTALLHYPq"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="n − 1∈ℕ" org.eventb.core.source="/Refinement &amp; Variants/Countdown.bum|org.eventb.core.machineFile#Countdown|org.eventb.core.invariant#)"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Refinement &amp; Variants/Countdown.bum|org.eventb.core.machineFile#Countdown|org.eventb.core.event#*"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Refinement &amp; Variants/Countdown.bum|org.eventb.core.machineFile#Countdown|org.eventb.core.invariant#)"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Refinement &amp; Variants/Countdown.bpo|org.eventb.core.poFile#Countdown|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Refinement &amp; Variants/Countdown.bpo|org.eventb.core.poFile#Countdown|org.eventb.core.poSequent#decrement\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Refinement &amp; Variants/Countdown.bpo|org.eventb.core.poFile#Countdown|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="decrement/n/NAT" org.eventb.core.accurate="true" org.eventb.core.poDesc="Natural number variant of event" org.eventb.core.poStamp="3">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Refinement &amp; Variants/Countdown.bpo|org.eventb.core.poFile#Countdown|org.eventb.core.poPredicateSet#EVTALLHYPq"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="n∈ℕ" org.eventb.core.source="/Refinement &amp; Variants/Countdown.bum|org.eventb.core.machineFile#Countdown|org.eventb.core.variant#+"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Refinement &amp; Variants/Countdown.bum|org.eventb.core.machineFile#Countdown|org.eventb.core.event#*"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Refinement &amp; Variants/Countdown.bum|org.eventb.core.machineFile#Countdown|org.eventb.core.variant#+"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Refinement &amp; Variants/Countdown.bpo|org.eventb.core.poFile#Countdown|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Refinement &amp; Variants/Countdown.bpo|org.eventb.core.poFile#Countdown|org.eventb.core.poSequent#decrement\/n\/NAT|org.eventb.core.poPredicateSet#SEQHYP"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="decrement/n/VAR" org.eventb.core.accurate="true" org.eventb.core.poDesc="Variant of event" org.eventb.core.poStamp="3">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Refinement &amp; Variants/Countdown.bpo|org.eventb.core.poFile#Countdown|org.eventb.core.poPredicateSet#EVTALLHYPq"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="n − 1&lt;n" org.eventb.core.source="/Refinement &amp; Variants/Countdown.bum|org.eventb.core.machineFile#Countdown|org.eventb.core.variant#+"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Refinement &amp; Variants/Countdown.bum|org.eventb.core.machineFile#Countdown|org.eventb.core.event#*"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Refinement &amp; Variants/Countdown.bum|org.eventb.core.machineFile#Countdown|org.eventb.core.variant#+"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Refinement &amp; Variants/Countdown.bpo|org.eventb.core.poFile#Countdown|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Refinement &amp; Variants/Countdown.bpo|org.eventb.core.poFile#Countdown|org.eventb.core.poSequent#decrement\/n\/VAR|org.eventb.core.poPredicateSet#SEQHYP"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTq" org.eventb.core.parentSet="/Refinement &amp; Variants/Countdown.bpo|org.eventb.core.poFile#Countdown|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="n'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPq" org.eventb.core.parentSet="/Refinement &amp; Variants/Countdown.bpo|org.eventb.core.poFile#Countdown|org.eventb.core.poPredicateSet#EVTIDENTq" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="n&gt;0" org.eventb.core.source="/Refinement &amp; Variants/Countdown.bum|org.eventb.core.machineFile#Countdown|org.eventb.core.event#*|org.eventb.core.guard#'"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Refinement &amp; Variants/Countdown.bpo|org.eventb.core.poFile#Countdown|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="n∈ℕ" org.eventb.core.source="/Refinement &amp; Variants/Countdown.bum|org.eventb.core.machineFile#Countdown|org.eventb.core.invariant#)"/>
+    </org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

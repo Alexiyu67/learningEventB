@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.psFile>
+    <org.eventb.core.psStatus name="INITIALISATION/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="double_decrement/inv1/INV" org.eventb.core.confidence="-99" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="double_decrement/grd1/GRD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="double_decrement/act1/SIM" org.eventb.core.confidence="-99" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
+</org.eventb.core.psFile>
