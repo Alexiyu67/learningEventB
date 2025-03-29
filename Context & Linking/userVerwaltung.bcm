@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <org.eventb.core.scMachineFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd">
-    <org.eventb.core.scEvent name="'" org.eventb.core.accurate="true" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION" org.eventb.core.source="/Context &amp; Linking/userVerwaltung.bum|org.eventb.core.machineFile#userVerwaltung|org.eventb.core.event#'"/>
+    <org.eventb.core.scSeesContext name="'" org.eventb.core.scTarget="/Context &amp; Linking/UsersCtx.bcc" org.eventb.core.source="/Context &amp; Linking/userVerwaltung.bum|org.eventb.core.machineFile#userVerwaltung|org.eventb.core.seesContext#("/>
+    <org.eventb.core.scInternalContext name="UsersCtx">
+        <org.eventb.core.scAxiom name="'" org.eventb.core.label="axm1" org.eventb.core.predicate="validUsers⊆USER" org.eventb.core.source="/Context &amp; Linking/UsersCtx.buc|org.eventb.core.contextFile#UsersCtx|org.eventb.core.axiom#)" org.eventb.core.theorem="false"/>
+        <org.eventb.core.scAxiom name="(" org.eventb.core.label="axm2" org.eventb.core.predicate="finite(validUsers)" org.eventb.core.source="/Context &amp; Linking/UsersCtx.buc|org.eventb.core.contextFile#UsersCtx|org.eventb.core.axiom#*" org.eventb.core.theorem="false"/>
+        <org.eventb.core.scCarrierSet name="USER" org.eventb.core.source="/Context &amp; Linking/UsersCtx.buc|org.eventb.core.contextFile#UsersCtx|org.eventb.core.carrierSet#'" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.scConstant name="validUsers" org.eventb.core.source="/Context &amp; Linking/UsersCtx.buc|org.eventb.core.contextFile#UsersCtx|org.eventb.core.constant#(" org.eventb.core.type="ℙ(USER)"/>
+    </org.eventb.core.scInternalContext>
+    <org.eventb.core.scInvariant name="UsersCty" org.eventb.core.label="inv1" org.eventb.core.predicate="loggedIn∈ℙ(USER)" org.eventb.core.source="/Context &amp; Linking/userVerwaltung.bum|org.eventb.core.machineFile#userVerwaltung|org.eventb.core.invariant#*" org.eventb.core.theorem="false"/>
+    <org.eventb.core.scInvariant name="UsersCtz" org.eventb.core.label="inv2" org.eventb.core.predicate="loggedIn⊆validUsers" org.eventb.core.source="/Context &amp; Linking/userVerwaltung.bum|org.eventb.core.machineFile#userVerwaltung|org.eventb.core.invariant#," org.eventb.core.theorem="false"/>
+    <org.eventb.core.scVariable name="loggedIn" org.eventb.core.abstract="false" org.eventb.core.concrete="true" org.eventb.core.source="/Context &amp; Linking/userVerwaltung.bum|org.eventb.core.machineFile#userVerwaltung|org.eventb.core.variable#)" org.eventb.core.type="ℙ(USER)"/>
+    <org.eventb.core.scEvent name="loggedIo" org.eventb.core.accurate="true" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION" org.eventb.core.source="/Context &amp; Linking/userVerwaltung.bum|org.eventb.core.machineFile#userVerwaltung|org.eventb.core.event#'">
+        <org.eventb.core.scAction name="'" org.eventb.core.assignment="loggedIn ≔ ∅ ⦂ ℙ(USER)" org.eventb.core.label="act1" org.eventb.core.source="/Context &amp; Linking/userVerwaltung.bum|org.eventb.core.machineFile#userVerwaltung|org.eventb.core.event#'|org.eventb.core.action#'"/>
+    </org.eventb.core.scEvent>
+    <org.eventb.core.scEvent name="loggedIp" org.eventb.core.accurate="true" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="login" org.eventb.core.source="/Context &amp; Linking/userVerwaltung.bum|org.eventb.core.machineFile#userVerwaltung|org.eventb.core.event#+">
+        <org.eventb.core.scGuard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="u∈validUsers" org.eventb.core.source="/Context &amp; Linking/userVerwaltung.bum|org.eventb.core.machineFile#userVerwaltung|org.eventb.core.event#+|org.eventb.core.guard#'" org.eventb.core.theorem="true"/>
+        <org.eventb.core.scParameter name="u" org.eventb.core.source="/Context &amp; Linking/userVerwaltung.bum|org.eventb.core.machineFile#userVerwaltung|org.eventb.core.event#+|org.eventb.core.parameter#)" org.eventb.core.type="USER"/>
+        <org.eventb.core.scAction name="v" org.eventb.core.assignment="loggedIn ≔ loggedIn∪{u}" org.eventb.core.label="act1" org.eventb.core.source="/Context &amp; Linking/userVerwaltung.bum|org.eventb.core.machineFile#userVerwaltung|org.eventb.core.event#+|org.eventb.core.action#("/>
+    </org.eventb.core.scEvent>
 </org.eventb.core.scMachineFile>

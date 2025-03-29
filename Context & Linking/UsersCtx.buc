@@ -3,5 +3,5 @@
     <org.eventb.core.carrierSet name="'" org.eventb.core.identifier="USER"/>
     <org.eventb.core.constant name="(" org.eventb.core.identifier="validUsers"/>
     <org.eventb.core.axiom name=")" org.eventb.core.label="axm1" org.eventb.core.predicate="validUsers ⊆ USER"/>
-    <org.eventb.core.axiom name="*" org.eventb.core.label="axm2" org.eventb.core.predicate="finite(validUser)"/>
+    <org.eventb.core.axiom name="*" org.eventb.core.label="axm2" org.eventb.core.predicate="finite(validUsers)"/>
 </org.eventb.core.contextFile>
