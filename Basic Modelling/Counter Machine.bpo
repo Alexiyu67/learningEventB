@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+    <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0"/>
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/Basic Modelling/Counter Machine.bpo|org.eventb.core.poFile#Counter Machine|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="count" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="inv1/THM" org.eventb.core.accurate="true" org.eventb.core.poDesc="Theorem" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Basic Modelling/Counter Machine.bpo|org.eventb.core.poFile#Counter Machine|org.eventb.core.poPredicateSet#ABSHYP"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="count∈ℕ∧count≤10" org.eventb.core.source="/Basic Modelling/Counter Machine.bum|org.eventb.core.machineFile#Counter Machine|org.eventb.core.invariant#)"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Basic Modelling/Counter Machine.bum|org.eventb.core.machineFile#Counter Machine|org.eventb.core.invariant#)"/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Basic Modelling/Counter Machine.bpo|org.eventb.core.poFile#Counter Machine|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/Basic Modelling/Counter Machine.bpo|org.eventb.core.poFile#Counter Machine|org.eventb.core.poPredicateSet#ABSHYP"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTcounu" org.eventb.core.parentSet="/Basic Modelling/Counter Machine.bpo|org.eventb.core.poFile#Counter Machine|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="count'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPcounu" org.eventb.core.parentSet="/Basic Modelling/Counter Machine.bpo|org.eventb.core.poFile#Counter Machine|org.eventb.core.poPredicateSet#EVTIDENTcounu" org.eventb.core.poStamp="0"/>
+    <org.eventb.core.poPredicateSet name="EVTIDENTcounv" org.eventb.core.parentSet="/Basic Modelling/Counter Machine.bpo|org.eventb.core.poFile#Counter Machine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="count'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPcounv" org.eventb.core.parentSet="/Basic Modelling/Counter Machine.bpo|org.eventb.core.poFile#Counter Machine|org.eventb.core.poPredicateSet#EVTIDENTcounv" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="count&lt;10" org.eventb.core.source="/Basic Modelling/Counter Machine.bum|org.eventb.core.machineFile#Counter Machine|org.eventb.core.event#*|org.eventb.core.guard#'"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTcounw" org.eventb.core.parentSet="/Basic Modelling/Counter Machine.bpo|org.eventb.core.poFile#Counter Machine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="count'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPcounw" org.eventb.core.parentSet="/Basic Modelling/Counter Machine.bpo|org.eventb.core.poFile#Counter Machine|org.eventb.core.poPredicateSet#EVTIDENTcounw" org.eventb.core.poStamp="0"/>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Basic Modelling/Counter Machine.bpo|org.eventb.core.poFile#Counter Machine|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="count∈ℕ∧count≤10" org.eventb.core.source="/Basic Modelling/Counter Machine.bum|org.eventb.core.machineFile#Counter Machine|org.eventb.core.invariant#)"/>
+    </org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>
