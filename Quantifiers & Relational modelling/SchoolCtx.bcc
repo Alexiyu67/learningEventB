@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd">
+    <org.eventb.core.scAxiom name="'" org.eventb.core.label="axm1" org.eventb.core.predicate="registration⊆STUDENT × COURSE" org.eventb.core.source="/Quantifiers &amp; Relational modelling/SchoolCtx.buc|org.eventb.core.contextFile#SchoolCtx|org.eventb.core.axiom#*" org.eventb.core.theorem="false"/>
+    <org.eventb.core.scAxiom name="(" org.eventb.core.label="axm2" org.eventb.core.predicate="finite(registration)" org.eventb.core.source="/Quantifiers &amp; Relational modelling/SchoolCtx.buc|org.eventb.core.contextFile#SchoolCtx|org.eventb.core.axiom#+" org.eventb.core.theorem="false"/>
+    <org.eventb.core.scCarrierSet name="COURSE" org.eventb.core.source="/Quantifiers &amp; Relational modelling/SchoolCtx.buc|org.eventb.core.contextFile#SchoolCtx|org.eventb.core.carrierSet#(" org.eventb.core.type="ℙ(COURSE)"/>
+    <org.eventb.core.scCarrierSet name="STUDENT" org.eventb.core.source="/Quantifiers &amp; Relational modelling/SchoolCtx.buc|org.eventb.core.contextFile#SchoolCtx|org.eventb.core.carrierSet#'" org.eventb.core.type="ℙ(STUDENT)"/>
+    <org.eventb.core.scConstant name="registration" org.eventb.core.source="/Quantifiers &amp; Relational modelling/SchoolCtx.buc|org.eventb.core.contextFile#SchoolCtx|org.eventb.core.constant#)" org.eventb.core.type="ℙ(STUDENT×COURSE)"/>
+</org.eventb.core.scContextFile>
